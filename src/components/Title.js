@@ -10,7 +10,3 @@ export default class Title extends React.Component {
     );
   }
 }
-
-export function hola() {
-  return "Hola";
-}
