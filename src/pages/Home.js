@@ -1,5 +1,6 @@
 import React  from 'react'
 import RaisedButton from 'material-ui/RaisedButton'
+import { TransitionGroup } from 'react-transition-group'
 
 import {indigo400} from 'material-ui/styles/colors'
 
@@ -15,8 +16,10 @@ export default class Home extends React.Component {
     super(props);
 
     this.state = {
-      places: data.places
+      places: []
     }
+
+    setTimeout( ()=> this.setState( { places: data.places} ), 3000 )
 
     this.hidePlace = this.hidePlace.bind(this);
 
@@ -54,9 +57,9 @@ export default class Home extends React.Component {
         </div>
         <div style={{ 'backgroundColor': indigo400, 'padding': '40px', color:'white'}}>
           <h3 style= {{ 'fontSize': '24px'}}>Sitios populares </h3>
-          <div className="row">
+          <TransitionGroup className="row">
               { this.places() }
-          </div>
+          </TransitionGroup>
         </div>
       </section>
     );
