@@ -23,8 +23,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 30%;
-  max-width: 30%;
+  flex-basis: 40%;
+  max-width: 40%;
   box-sizing: border-box;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -35,6 +35,10 @@
 
 .Header-Benefit-Image img{
   max-width: 100%;
+}
+
+.places img{
+  max-height: 100%;
 }
 
 .Header-Benefit-content{
@@ -48,17 +52,18 @@
 
 .Header-ilustration{
     position: absolute;
+    padding-left: 50px;
     z-index: -1;
     top: 40px;
-    height: 300px;
+    height: 380px;
 }
 
 .Header-main{
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   margin-left: -200px;
 }
 
 .container{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
